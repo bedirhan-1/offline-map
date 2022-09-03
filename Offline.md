@@ -17,7 +17,7 @@ Python kurulu değilse [python3.10](https://www.python.org/downloads/) veya
 oluşturulabilir.
 
 Map tileset için kullanılabilecek program:
-(AliFlux/MapTilesDownloader)[https://github.com/AliFlux/MapTilesDownloader]
+[MapTilesDownloader](https://github.com/AliFlux/MapTilesDownloader)
 
 Kullanımı dokümantasyondan kolaylıkla anlaşılabilir.
 
