@@ -1,4 +1,4 @@
-# Getting started
+# OFFLINE-MAP
 
 ### Adım 1 (Programı indir)
 
@@ -14,7 +14,7 @@ yarn
 yarn start
 ```
 
-or
+veya
 
 ```sh
 npm install
@@ -27,18 +27,34 @@ Program [craco](https://github.com/reearth/craco-cesium) ile build edildi.
 
 ## Programla ilgili bilinmesi gerekn bazı şeyler
 
-<p>Oldukça basit bir offline map yapmak için yazıldı ve şu an için ekstra bir özelliği yok.</p>
+Oldukça basit bir offline map yapmak için yazıldı ve şu an için ekstra bir özelliği yok.
 
 ```js
-// Viewer comonent create your map
+// Viewer komponenti haritanın kendisini oluşturur.
 <Viewer full timeline={false} animation={false}>
   <ImageryLayer />
   <SwitchOffline />
 </Viewer>
 ```
 
-### You have to know
+Viewer'ın içinde bulunan ImageryLayer haritanın offline olmasını sağlayan bir provider oluşturur. SwitchOffline ise bu provider'ı etkinleştiren veya kapatan yapıdır.
 
-This is a fairly simple project, but there are small details to be aware of.
+## ImageryLayer
 
-###
+```js
+const ImageryLayer = () => {
+  const imageryLayer = useAppSelector((state) => state.layer);
+  const { Offline_World_Map } = imageryLayer;
+
+  return (
+    <div>
+      <ImageryLayerForOfflineMap
+        frame={Offline_World_Map}
+        url={Arcgis.Offline_World_Map}
+      />
+    </div>
+  );
+};
+```
+
+ImageryLayerForOfflineMap komponenti isminden anlaşılcağı gibi offline map için bir görsel katmanı oluşturmaktır.
