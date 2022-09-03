@@ -7,6 +7,5 @@ export interface ILayer {
 }
 
 export interface IFrame {
-  frame: ILayer;
   url: string;
 }
