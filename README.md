@@ -87,4 +87,4 @@ Burada gerçekleşen olay ise `cesium`'un kendisinde bulunan `TileMapServiceImag
 NaturalEarthII dosya yapısını işaret ediyor) offline harita için gerekli assetleri bulunduran file yapısını
 haritaya enjekte edebiliyoruz.
 
-Kendi offline harita assetlerimi oluşturmak için [gereksinimler](https://github.com/AliFlux/MapTilesDownloader)
+Kendi offline harita assetlerimi oluşturmak için [gereksinimler](https://github.com/bedirhan-1/offline-map/blob/master/Offline.md)
