@@ -59,7 +59,7 @@ const ImageryLayer = () => {
 
 ImageryLayerForOfflineMap komponenti isminden anlaşılcağı gibi offline map için bir görsel katmanı oluşturmaktır.
 
-#### ImageryLayerForOfflineMap'in içeriği:
+### ImageryLayerForOfflineMap'in içeriği:
 
 ```js
 const ImageryLayerForOfflineMap = (props: IFrame) => {
@@ -84,5 +84,7 @@ const ImageryLayerForOfflineMap = (props: IFrame) => {
 
 Burada gerçekleşen olay ise `cesium`'un kendisinde bulunan `TileMapServiceImageryProvider`'ı ve `buildModuleUrl`'i
 örnekte olduğu gibi kullanarak (şu an için props olarak gelen url, cesiumun içinde halihazırda bulunan
-NaturalEarthII dosyasını işaret ediyor) offline harita için gerekli assetleri bulunduran file yapısını haritaya
-enjekte edebiliyoruz.
+NaturalEarthII dosya yapısını işaret ediyor) offline harita için gerekli assetleri bulunduran file yapısını
+haritaya enjekte edebiliyoruz.
+
+Kendi offline harita assetlerimi oluşturmak için [gereksinimler](https://github.com/AliFlux/MapTilesDownloader)
