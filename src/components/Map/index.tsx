@@ -5,7 +5,13 @@ import ImageryLayer from "../ImageryLayer";
 const Map: React.FC = () => {
   return (
     <>
-      <Viewer full timeline={false} animation={false}>
+      <Viewer
+        full
+        timeline={false}
+        animation={false}
+        baseLayerPicker={false}
+        geocoder={false}
+      >
         <ImageryLayer />
         <SwitchOffline />
       </Viewer>

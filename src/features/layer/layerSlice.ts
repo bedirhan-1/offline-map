@@ -13,9 +13,17 @@ const layerSlice = createSlice({
         Offline_World_Map: action.payload,
       };
     },
+
+    updateDefaultOfflineMap: (state, action: PayloadAction<ILayer>) => {
+      return {
+        ...state,
+        Default_Offline_Map: action.payload,
+      };
+    },
   },
 });
 
-export const { updateOfflineWorldMap } = layerSlice.actions;
+export const { updateOfflineWorldMap, updateDefaultOfflineMap } =
+  layerSlice.actions;
 
 export default layerSlice;
