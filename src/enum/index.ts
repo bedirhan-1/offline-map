@@ -1,10 +1,5 @@
 enum Arcgis {
-  //This link is for offline map in cesium's own library
-  // TODO 1
-  /**
-   * create a file system
-   */
-  Offline_World_Map = "Assets/Textures/NaturalEarthII",
+  Offline_World_Map = `http://localhost:8081/output/{timestamp}/{z}/{x}/{y}.png`,
 }
 
 enum Frame {

@@ -1,4 +1,4 @@
-import ImageryLayerForOfflineMap from "../ImageryProvider";
+import ImageryLayerForOfflineMap from "../ImageryLayerOfflineMap";
 import { Arcgis } from "../../enum";
 
 const ImageryLayer = () => {
