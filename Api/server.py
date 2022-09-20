@@ -1,20 +1,42 @@
 import uvicorn
 from fastapi import FastAPI
 from fastapi.responses import FileResponse
-
+import os
+from fastapi.middleware.cors import CORSMiddleware
 
 app = FastAPI()
 
-Link = "http://127.0.0.1:5000/data/1663398860418/0/0/0.png"
+origins = [
+    "http://localhost:3000",
+]
 
-@app.get("/data/1663398860418/{z}/{x}/{y}.png")
-async def get_tile(z: int, x: int, y: int):
-    try :
-        return FileResponse(f"tiles/{z}/{x}/{y}.png")
-        
-    except Exception as e:
-        return e
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=origins,
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
+
+script_dir = os.path.dirname(__file__)
+print(script_dir)
+rel_path = "data/1663398860418/"
+abs_file_path = os.path.join(script_dir, rel_path)
+# print(abs_file_path)
 
 
-if __name__ == "__main__":
-    uvicorn.run("server:app", host="127.0.0.1", port=5000, log_level="info")
+
+@app.get('/')
+def main():
+    return "Hello world"
+
+@app.get('/images/{z}/{x}/{y}',response_class=FileResponse)
+async def images(z: str, x: str, y: str):
+    image =  os.path.join(rel_path, z,x,y)
+    print(image)
+
+    return image
+
+
+# if __name__ == "__main__":
+#     uvicorn.run("server:app", host="127.0.0.1", port=5000, log_level="info")

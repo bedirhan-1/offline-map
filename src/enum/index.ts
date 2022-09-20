@@ -1,5 +1,5 @@
 enum Arcgis {
-  Offline_World_Map = "http://127.0.0.1:5000/data/1663398860418",
+  Offline_World_Map = "http://127.0.0.1:8000/images",
   Default_Offline_Map = "Assets/Textures/NaturalEarthII",
   World_Terrain_Base = "https://services.arcgisonline.com/arcgis/rest/services/World_Terrain_Base/MapServer",
 }

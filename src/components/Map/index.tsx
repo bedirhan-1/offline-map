@@ -19,7 +19,7 @@ const Map: React.FC = () => {
         geocoder={false}
         homeButton={false}
         infoBox={false}
-        // imageryProvider={false}
+        imageryProvider={false}
         navigationHelpButton={false}
         sceneModePicker={false}
       >
