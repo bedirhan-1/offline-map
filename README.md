@@ -64,7 +64,6 @@ ImageryLayerForOfflineMap komponenti isminden anlaşılcağı gibi offline map i
 ```js
 const ImageryLayerForOfflineMap = (props: IFrame) => {
   const MapIsOffline = useAppSelector((state) => state.switch.isOn);
-  console.log(MapIsOffline);
   const { url } = props;
   return (
     <div>

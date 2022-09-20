@@ -3,6 +3,7 @@ import { createSlice, PayloadAction } from "@reduxjs/toolkit";
 import { layer } from "../../Interfaces/opacity";
 
 const initialState = layer;
+
 const layerSlice = createSlice({
   name: "layer",
   initialState,
