@@ -1,19 +1,17 @@
 .content {
-  display: flex;
   position: absolute;
   top: 10px;
-  left: 0;
-  border: 1px solid white;
-  border-radius: 1vh;
   align-items: center;
   padding-left: 1vh;
   padding-right: 1vh;
-  background-color: green;
 }
 
 .switch {
   background-color: beige;
   font-family: monospace;
+  border-radius: 12px;
+  margin-top: 8px;
+  padding-right: 8px;
 }
 
 h3 {

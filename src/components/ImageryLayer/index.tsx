@@ -6,6 +6,7 @@ const ImageryLayer = () => {
     <div>
       <ImageryLayerForOfflineMap url={Arcgis.Offline_World_Map} />
       <ImageryLayerForOfflineMap url={Arcgis.Default_Offline_Map} />
+      <ImageryLayerForOfflineMap url={Arcgis.World_Terrain_Base} />
     </div>
   );
 };
