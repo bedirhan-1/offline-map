@@ -7,7 +7,7 @@ export const SwitchOffline = () => {
   const dispatch = useAppDispatch();
 
   const changeSwitch = () => {
-    dispatch(switchStateChange());
+    dispatch(switchStateChange("offline"));
   };
 
   return (
