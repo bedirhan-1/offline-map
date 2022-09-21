@@ -34,7 +34,7 @@ const ImageryLayerForOfflineMap = (props: IFrame) => {
         <Layer
           imageryProvider={
             new TileMapServiceImageryProvider({
-              maximumLevel: 10,
+              maximumLevel: 19,
               url: url,
             })
           }
