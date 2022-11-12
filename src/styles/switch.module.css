@@ -14,9 +14,23 @@
   padding-right: 8px;
 }
 
-h3 {
-  color: white;
-  font-weight: 400;
-  font-size: small;
-  font-family: "Trebuchet MS";
+.toolBox {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  align-items: center;
+  padding-left: 1vh;
+  padding-right: 1vh;
+}
+
+.toolBoxButton {
+  background-color: crimson;
+  font-family: monospace;
+  border-radius: 12px;
+  margin-top: 8px;
+  padding-right: 8px;
+  padding-left: 8px;
+}
+.toolBoxButton:hover {
+  background-color: rgb(240, 126, 126);
 }

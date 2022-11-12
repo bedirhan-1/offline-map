@@ -5,6 +5,7 @@ import {
   ArcGisMapServerImageryProvider,
   TileMapServiceImageryProvider,
   buildModuleUrl,
+  GeographicTilingScheme,
 } from "cesium";
 
 const ImageryLayerForOfflineMap = (props: IFrame) => {
@@ -36,6 +37,8 @@ const ImageryLayerForOfflineMap = (props: IFrame) => {
             new TileMapServiceImageryProvider({
               maximumLevel: 19,
               url: url,
+              tilingScheme: new GeographicTilingScheme(),
+              flipXY: true,
             })
           }
         />

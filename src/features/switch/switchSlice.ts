@@ -5,7 +5,7 @@ export interface SwitchState {
 }
 
 const intialState: SwitchState = {
-  whichSwitch: "Normal",
+  whichSwitch: "Offline_World_Map",
 };
 
 export const switchSlice = createSlice({
